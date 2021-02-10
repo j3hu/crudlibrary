@@ -1,0 +1,32 @@
+<div class="col-md-6 user-container">
+  <h2 class="text-center">Nuevo Libro</h2>
+  <form [formGroup]="addForm" (ngSubmit)="onSubmit()">
+    <div class="form-group">
+      <label for="isbn">ISBN:</label>
+      <input type="text" formControlName="isbn" placeholder="isbn" name="isbn" class="form-control"
+             id="isbn">
+    </div>
+    <br/>
+
+    <div class="form-group">
+      <label for="titulo">Titulo:</label>
+      <input type="titulo" formControlName="titulo" placeholder="titulo" name="titulo" class="form-control"
+             id="titulo">
+    </div>
+
+    <div class="form-group">
+      <label for="id_autor">Autor:</label>
+      <input type="id_autor" formControlName="id_autor" placeholder="id_autor" name="id_autor" class="form-control"
+             id="id_autor">
+    </div>
+
+    <div class="form-group">
+      <label for="precio">Autor:</label>
+      <input type="precio" formControlName="precio" placeholder="precio" name="precio" class="form-control"
+             id="precio">
+    </div>
+
+    <br/>
+    <button class="btn btn-success">Add</button>
+  </form>
+</div>
